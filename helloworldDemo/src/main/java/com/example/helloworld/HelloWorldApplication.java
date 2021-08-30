@@ -21,9 +21,13 @@ public class HelloWorldApplication extends Application<HelloWorldConfiguration> 
     }
 
     @Override
-    public void run(final HelloWorldConfiguration configuration,
-                    final Environment environment) {
-        // TODO: implement application
+    public void run(HelloWorldConfiguration configuration,
+                    Environment environment) {
+        final HelloWorldResource resource = new HelloWorldResource(
+            configuration.getTemplate(),
+            configuration.getDefaultName()
+            );
+        environment.jersey().register(resource);
     }
 
 }
