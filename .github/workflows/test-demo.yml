@@ -2,7 +2,8 @@ name: test demo
 on: [push]
 jobs:
   my_job:
+    runs-on: ubuntu-latest
     steps:
-      -name: build
-      uses: docker://maven:3-jdk-11
-      -run: mvn install
+      - name: build
+        uses: docker://maven:3-jdk-11
+      - run: mvn install
