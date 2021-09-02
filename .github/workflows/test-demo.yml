@@ -6,4 +6,5 @@ jobs:
     steps:
       - name: build
         uses: docker://maven:3-jdk-11
+      - run: cd helloworldDemo
       - run: mvn install
