@@ -7,7 +7,7 @@ jobs:
       image: maven:3-jdk-11
     defaults:
       run:
-        working-directory: ./helloworldDemo
+        working-directory: helloworldDemo
     steps:
       - name: file check
         run: ls
