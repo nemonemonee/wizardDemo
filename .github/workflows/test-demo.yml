@@ -9,6 +9,8 @@ jobs:
     steps:
       - name: file check
         run: ls
-        working-directory: ./helloworldDemo
+        
       - name: build
         run: mvn package
+        working-directory: ./helloworldDemo
+        
