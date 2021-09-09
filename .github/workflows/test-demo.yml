@@ -6,6 +6,7 @@ jobs:
     container: 
       image: maven:3-jdk-11
     steps:
-      - name: build
+      - name: file check
         run: ls
-             mvn install
+      - name: build
+        run: mvn install
