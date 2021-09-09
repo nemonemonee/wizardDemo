@@ -2,7 +2,9 @@ name: test demo
 on: [push]
 jobs:
   my_job:
-    container: maven:3-jdk-11
+    runs-on: ubuntu-latest
+    container: 
+      image: maven:3-jdk-11
     steps:
       - name: build
       - run: cd helloworldDemo
