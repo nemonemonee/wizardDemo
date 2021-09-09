@@ -9,4 +9,4 @@ jobs:
       - name: file check
         run: ls
       - name: build
-        run: mvn install
+        run: ./build.sh
