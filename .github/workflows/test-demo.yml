@@ -7,5 +7,5 @@ jobs:
       image: maven:3-jdk-11
     steps:
       - name: build
-        run: cd helloworldDemo
+        run: ls
              mvn install
