@@ -5,11 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     container: 
       image: maven:3-jdk-11
-    defaults:
-      run:
-        working-directory: helloworldDemo
+        
     steps:
       - name: file check
         run: ls
+        working-directory: ./helloworldDemo
       - name: build
         run: mvn package
