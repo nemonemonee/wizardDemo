@@ -1,13 +1,13 @@
-# wizardDemo
-* To run the .sh files, type in the following codes.
+# HelloWorld
 
+How to start the HelloWorld application
+---
 
-        chmod a+x ./xxxx.sh
-        ./xxxx.sh
-* To create the sample code, use the following information as reference.
+1. Run `mvn clean install` to build your application
+1. Start application with `java -jar target/helloworldDemo-0.0.1.jar server config.yml`
+1. To check that your application is running enter url `http://localhost:8080`
 
-        groupID: io.dropwizard.archetypes
-        artifactID: HelloworldDemo
-        version: 0.0.1
-        package: com.example.helloworld
-        name: HelloWorld
+Health Check
+---
+
+To see your applications health enter url `http://localhost:8081/healthcheck`
