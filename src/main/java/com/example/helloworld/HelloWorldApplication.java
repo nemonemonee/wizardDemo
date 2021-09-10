@@ -4,7 +4,7 @@ import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
 import com.example.helloworld.health.TemplateHealthCheck;
-import com.example.helloworld.resources.Saying;
+import com.example.helloworld.resources.HelloWorldResource;
 
 public class HelloWorldApplication extends Application<HelloWorldConfiguration> {
 
