@@ -10,3 +10,5 @@ jobs:
         
       - name: build
         run: mvn package 
+      - name: test run
+        run: java -jar target/helloworldDemo-0.0.1.jar server hello_world.yml
