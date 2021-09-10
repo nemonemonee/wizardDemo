@@ -3,8 +3,8 @@ package com.example.helloworld;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
-import com.example.helloworld.health;
-import com.example.helloworld.resources;
+import com.example.helloworld.health.TemplateHealthCheck;
+import com.example.helloworld.resources.Saying;
 
 public class HelloWorldApplication extends Application<HelloWorldConfiguration> {
 
