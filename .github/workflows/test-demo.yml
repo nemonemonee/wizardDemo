@@ -3,12 +3,10 @@ on: [push]
 jobs:
   my_job:
     runs-on: ubuntu-latest
-    container: 
-      image: maven:3-jdk-11
+
         
     steps:
-      - name: file check
-        run: ls
+      - uses: actions/checkout@v2
         
       - name: build
         run: mvn package 
